@@ -1,0 +1,20 @@
+DATA TAGS
+------------
+
+You can use data tags to grab different kinds of posts in any template you wish.
+
+POSTS
+------
+Posts include blogs, products, testimonials and so on.
+
+EXAMPLES
+--------
+
+{% assign blogs = get_some_blogs %}
+{% for blog in blogs %}
+...
+{% endfor %}
+
+{% for blog in get_blogs 3, created_at %}
+...
+{% endfor %}
